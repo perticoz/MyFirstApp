@@ -8,13 +8,17 @@ import { SignUpComponent } from './sign-up/sign-up.component';
 import { UserProfileComponent } from './user-profile/user-profile.component';
 import { MenuComponent } from './menu/menu.component';
 import { ROUTES } from './app.routes';
+import { AttributeDirective } from './attribute.directive';
+import { StructurelDirective } from './structurel.directive';
 
 @NgModule({
   declarations: [
     AppComponent,
     SignUpComponent,
     UserProfileComponent,
-    MenuComponent
+    MenuComponent,
+    AttributeDirective,
+    StructurelDirective
   ],
   imports: [
     BrowserModule,

@@ -8,7 +8,8 @@ import { Component, OnInit } from '@angular/core';
 export class UserProfileComponent implements OnInit {
 
   bool = true;
-
+  showMovie: boolean = true;
+  onMovie() {this.showMovie = !this.showMovie}
   User = {
     name : 'Doe',
     firstName : 'John',
