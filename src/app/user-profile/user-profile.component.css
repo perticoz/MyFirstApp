@@ -12,3 +12,9 @@
 .button:hover {
     background-color: green;
 }
+
+.belleclasse {
+    color: red;
+    font-size: 2em;
+    font-weight: bold;
+}

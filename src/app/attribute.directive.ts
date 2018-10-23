@@ -10,15 +10,14 @@ export class AttributeDirective implements OnInit{
   ngOnInit() {
 
   }
-
-@HostListener('mouseenter') mouseEnterEvent (eventData:Event) {
-  this.rend.setStyle(this.elRef.nativeElement, 'color', 'red');
-  this.rend.setStyle(this.elRef.nativeElement, 'font-weight', 'bold');
+  @HostListener('mouseover')
+  onMouseOver() {
+    this.rend.addClass(this.elRef.nativeElement, 'belleclasse');
 }
+@HostListener('mouseleave') 
+onMouseLeave() {
+    this.rend.removeClass(this.elRef.nativeElement, 'belleclasse');
 
-@HostListener('mouseleave') mouseLeaveEvent (eventData:Event) {
-  this.rend.setStyle(this.elRef.nativeElement, 'color', 'black');
-  this.rend.setStyle(this.elRef.nativeElement, 'font-weight', 'normal');
 }
 
 }
